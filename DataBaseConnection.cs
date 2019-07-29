@@ -98,8 +98,7 @@ namespace TradexToSybaseMigrate
         {
             try {
                 Library.WriteToLog("Getting Sybase Connection ::: ");
-                // string connectionString = "Data Source='172.29.13.80';Port=6100;UID='programmers';PWD='programmers';Database='Sybase';";
-                string connectionString = ConfigurationManager.ConnectionStrings["Sybaseconnection"].ConnectionString;
+                              string connectionString = ConfigurationManager.ConnectionStrings["Sybaseconnection"].ConnectionString;
                 connAse = new AseConnection(connectionString);
                 connAse.Open();
                 
